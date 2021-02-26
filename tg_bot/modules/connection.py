@@ -5,10 +5,7 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
     CommandHandler,
-    CallbackQueryHandler,
-    run_async,
-    CallbackContext,
-)
+    CallbackQueryHandler)
 
 import tg_bot.modules.sql.connection_sql as sql
 from tg_bot import dispatcher, SUDO_USERS, DEV_USERS

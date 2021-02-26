@@ -15,7 +15,7 @@ from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_an
 from tg_bot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
-from telegram.ext import CallbackContext, CommandHandler, run_async
+from telegram.ext import CallbackContext, CommandHandler
 from telegram.utils.helpers import mention_html
 
 BLACKLISTWHITELIST = (

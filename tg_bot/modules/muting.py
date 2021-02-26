@@ -1,7 +1,7 @@
 import html
 from typing import Optional
 
-from tg_bot import log, SARDEGNA_USERS, dispatcher
+from tg_bot import SARDEGNA_USERS, dispatcher
 from tg_bot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,

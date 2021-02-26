@@ -41,9 +41,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     CommandHandler,
     Filters,
-    MessageHandler,
-    run_async,
-)
+    MessageHandler)
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
 VALID_WELCOME_FORMATTERS = [

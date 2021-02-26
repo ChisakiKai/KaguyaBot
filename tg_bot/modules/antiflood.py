@@ -6,13 +6,8 @@ from telegram import (
     Message,
     Chat,
     Update,
-    Bot,
     User,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    ParseMode,
-    ChatPermissions,
-)
+    ChatPermissions)
 
 from tg_bot import SARDEGNA_USERS, WHITELIST_USERS, dispatcher
 from tg_bot.modules.sql.approve_sql import is_approved
@@ -34,7 +29,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     CallbackContext,
 )
-from telegram.utils.helpers import mention_html, escape_markdown
+from telegram.utils.helpers import mention_html
 from tg_bot.modules.helper_funcs.string_handling import extract_time
 from tg_bot.modules.connection import connected
 from tg_bot.modules.helper_funcs.alternate import send_message

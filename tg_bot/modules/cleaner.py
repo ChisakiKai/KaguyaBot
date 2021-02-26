@@ -14,9 +14,7 @@ from telegram.ext import (
     CallbackContext,
     CommandHandler,
     Filters,
-    MessageHandler,
-    run_async,
-)
+    MessageHandler)
 
 if ALLOW_EXCL:
     CMD_STARTERS = ("/", "!")
