@@ -185,8 +185,7 @@ def anime(update: Update, context: CallbackContext):
     if len(search) == 1:
         update.effective_message.reply_text("Format : /anime < anime name >")
         return
-    else:
-        search = search[1]
+    search = search[1]
     variables = {"search": search}
     json = requests.post(
         url, json={"query": anime_query, "variables": variables}

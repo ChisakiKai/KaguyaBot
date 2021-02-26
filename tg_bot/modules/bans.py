@@ -51,8 +51,7 @@ def ban(update, context):
         if excp.message == "User not found":
             message.reply_text("Can't seem to find this person.")
             return log_message
-        else:
-            raise
+        raise
 
     if user_id == context.bot.id:
         message.reply_text("Oh yeah, ban myself, noob!")
@@ -62,24 +61,23 @@ def ban(update, context):
         if user_id == OWNER_ID:
             message.reply_text("I'd never ban my owner.")
             return log_message
-        elif user_id in DEV_USERS:
+        if user_id in DEV_USERS:
             message.reply_text("I can't act against our own.")
             return log_message
-        elif user_id in SUDO_USERS:
+        if user_id in SUDO_USERS:
             message.reply_text("My sudos are ban immune")
             return log_message
-        elif user_id in SUPPORT_USERS:
+        if user_id in SUPPORT_USERS:
             message.reply_text("My support users are ban immune")
             return log_message
-        elif user_id in SARDEGNA_USERS:
+        if user_id in SARDEGNA_USERS:
             message.reply_text("Bring an order from Eagle Union to fight a Sardegna.")
             return log_message
-        elif user_id in WHITELIST_USERS:
+        if user_id in WHITELIST_USERS:
             message.reply_text("Neptunians are ban immune!")
             return log_message
-        else:
-            message.reply_text("This user has immunity and cannot be banned.")
-            return log_message
+        message.reply_text("This user has immunity and cannot be banned.")
+        return log_message
 
     log = (
         f"<b>{html.escape(chat.title)}:</b>\n"
@@ -107,16 +105,15 @@ def ban(update, context):
             # Do not reply
             message.reply_text("Banned!", quote=False)
             return log
-        else:
-            log.warning(update)
-            log.exception(
-                "ERROR banning user %s in chat %s (%s) due to %s",
-                user_id,
-                chat.title,
-                chat.id,
-                excp.message,
-            )
-            message.reply_text("Well damn, I can't ban that user.")
+        log.warning(update)
+        log.exception(
+            "ERROR banning user %s in chat %s (%s) due to %s",
+            user_id,
+            chat.title,
+            chat.id,
+            excp.message,
+        )
+        message.reply_text("Well damn, I can't ban that user.")
 
     return ""
 
@@ -144,8 +141,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         if excp.message == "User not found":
             message.reply_text("I can't seem to find this user.")
             return log_message
-        else:
-            raise
+        raise
 
     if user_id == bot.id:
         message.reply_text("I'm not gonna BAN myself, are you crazy?")
@@ -200,16 +196,15 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
                 f"Banned! User will be banned for {time_val}.", quote=False
             )
             return log
-        else:
-            log.warning(update)
-            log.exception(
-                "ERROR banning user %s in chat %s (%s) due to %s",
-                user_id,
-                chat.title,
-                chat.id,
-                excp.message,
-            )
-            message.reply_text("Well damn, I can't ban that user.")
+        log.warning(update)
+        log.exception(
+            "ERROR banning user %s in chat %s (%s) due to %s",
+            user_id,
+            chat.title,
+            chat.id,
+            excp.message,
+        )
+        message.reply_text("Well damn, I can't ban that user.")
 
     return log_message
 
@@ -237,8 +232,7 @@ def kick(update: Update, context: CallbackContext) -> str:
         if excp.message == "User not found":
             message.reply_text("I can't seem to find this user.")
             return log_message
-        else:
-            raise
+        raise
 
     if user_id == bot.id:
         message.reply_text("Yeahhh I'm not gonna do that.")
@@ -266,9 +260,7 @@ def kick(update: Update, context: CallbackContext) -> str:
             log += f"\n<b>Reason:</b> {reason}"
 
         return log
-
-    else:
-        message.reply_text("Well damn, I can't kick that user.")
+    message.reply_text("Well damn, I can't kick that user.")
 
     return log_message
 
@@ -311,8 +303,7 @@ def unban(update: Update, context: CallbackContext) -> str:
         if excp.message == "User not found":
             message.reply_text("I can't seem to find this user.")
             return log_message
-        else:
-            raise
+        raise
 
     if user_id == bot.id:
         message.reply_text("How would I unban myself if I wasn't here...?")
@@ -362,8 +353,7 @@ def selfunban(context: CallbackContext, update: Update) -> str:
         if excp.message == "User not found":
             message.reply_text("I can't seem to find this user.")
             return
-        else:
-            raise
+        raise
 
     if is_user_in_chat(chat, user.id):
         message.reply_text("Aren't you already in the chat??")

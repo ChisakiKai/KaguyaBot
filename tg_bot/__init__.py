@@ -151,5 +151,4 @@ def spamfilters(text, user_id, chat_id):
     if int(user_id) in SPAMMERS:
         print("This user is a spammer!")
         return True
-    else:
-        return False
+    return False
