@@ -3,7 +3,7 @@ import re
 from typing import Optional
 
 import telegram
-from tg_bot import BAN_STICKER, SARDEGNA_USERS, WHITELIST_USERS, dispatcher
+from tg_bot import SARDEGNA_USERS, WHITELIST_USERS, dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.chat_status import (
     bot_admin,
@@ -40,9 +40,7 @@ from telegram.ext import (
     CommandHandler,
     DispatcherHandlerStop,
     Filters,
-    MessageHandler,
-    run_async,
-)
+    MessageHandler)
 from telegram.utils.helpers import mention_html
 
 WARN_HANDLER_GROUP = 9

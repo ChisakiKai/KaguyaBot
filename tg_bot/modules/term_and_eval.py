@@ -3,7 +3,7 @@ import sys
 import os
 import re
 import subprocess
-from io import StringIO, BytesIO
+from io import StringIO
 from tg_bot import kp, OWNER_ID
 from pyrogram import filters
 

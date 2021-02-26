@@ -1,9 +1,8 @@
 from pyrogram import filters
 from tg_bot import kp, CF_API_KEY, log
-from pyrogram.handlers import MessageHandler
 from pyrogram.types import ChatPermissions, Message
 from pyrogram.errors import BadRequest
-import aiohttp, json, asyncio
+import aiohttp, asyncio
 from tg_bot.modules.global_bans import SPB_MODE
 import tg_bot.modules.sql.nlp_detect_sql as sql
 from tg_bot.modules.language import gs

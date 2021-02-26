@@ -1,19 +1,13 @@
 # module to get anime info by t.me/DragSama // find him on github :  https://github.com/DragSama // he's my doraemon btw.
-from telegram.ext import CommandHandler, CallbackContext
+from telegram.ext import CallbackContext
 from telegram import (
-    Message,
-    Chat,
-    User,
     ParseMode,
     Update,
     InlineKeyboardMarkup,
-    InlineKeyboardButton,
-)
+    InlineKeyboardButton)
 from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 import requests
-import math
-import time
 
 
 def shorten(description, info="anilist.co"):

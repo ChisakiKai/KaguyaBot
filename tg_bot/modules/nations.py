@@ -1,10 +1,8 @@
-import html
-import json
 import os
 from typing import List, Optional
 
 from telegram import Update, ParseMode, TelegramError
-from telegram.ext import CommandHandler, run_async, CallbackContext
+from telegram.ext import CommandHandler, CallbackContext
 from telegram.utils.helpers import mention_html
 
 from tg_bot import (
@@ -16,9 +14,7 @@ from tg_bot import (
     DEV_USERS,
     OWNER_ID,
 )
-from tg_bot.modules.helper_funcs.chat_status import whitelist_plus, dev_plus, sudo_plus
-from tg_bot.modules.helper_funcs.extraction import extract_user
-from tg_bot.modules.log_channel import gloggable
+from tg_bot.modules.helper_funcs.chat_status import whitelist_plus
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "tg_bot/elevated_users.json")
 

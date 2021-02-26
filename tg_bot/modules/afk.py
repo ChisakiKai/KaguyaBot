@@ -2,7 +2,7 @@ import html
 import random
 
 from telegram import Update, MessageEntity
-from telegram.ext import Filters, CallbackContext, MessageHandler
+from telegram.ext import Filters, CallbackContext
 from telegram.error import BadRequest
 from tg_bot import dispatcher
 from tg_bot.modules.disable import (
