@@ -12,9 +12,6 @@ from tg_bot import dispatcher, DEV_USERS, OWNER_ID
 class ErrorsDict(dict):
     "A custom dict to store errors and their count"
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
     def __contains__(self, error):
         error.identifier = "".join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ", k=5))
         for e in self:
