@@ -36,7 +36,7 @@ async def nlp_mode(client, message):
     is_admin = await admin_check(message)
     args = message.text.split(None, 1)
 
-    if is_admin == True:
+    if is_admin is True:
         if len(args) > 1:
             if args[1].lower() in ["on", "yes"]:
                 sql.enable_nlp(message.chat.id)
@@ -70,14 +70,14 @@ async def detect_spam(client, message):
     chat = message.chat
     msg = message.text
     chat_state = sql.does_chat_nlp(chat.id)
-    if SPB_MODE and CF_API_KEY and chat_state == True:
+    if SPB_MODE and CF_API_KEY and chat_state is True:
         try:
             payload = {'access_key': CF_API_KEY, 'input': msg}
             data = await session.post(url, data=payload)
             res_json = await data.json()
             if res_json['success']:
                 spam_check = res_json['results']['spam_prediction']['is_spam']
-                if spam_check == True:
+                if spam_check is True:
                     pred = res_json['results']['spam_prediction']['prediction']
                     await kp.restrict_chat_member(chat.id, user.id, ChatPermissions(can_send_messages=False))
                     try:
