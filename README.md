@@ -50,12 +50,11 @@ The bot is based of on the original work done by [PaulSonOfLars](https://github.
 This repo was just reamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
 
 Thank you for contributors on this Project:
-+ [Dank-del](https://github.com/Dank-del)
-+ [TsunayoshiSawada](https://github.com/TsunayoshiSawada)
-+ [TheRealPhoenix](https://github.com/rsktg)
-+ [DragSama](https://github.com/DragSama)
-+ [Athphane](https://github.com/athphane)
-
++ `[Dank-del]`(https://github.com/Dank-del)
++ `[TsunayoshiSawada]`(https://github.com/TsunayoshiSawada)
++ `[TheRealPhoenix]`(https://github.com/rsktg)
++ `[DragSama]`(https://github.com/DragSama)
++ `[Athphane]`(https://github.com/athphane)
 
 Any other authorship/credits can be seen through the commits
 
