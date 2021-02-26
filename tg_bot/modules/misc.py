@@ -183,22 +183,22 @@ def info(update: Update, context: CallbackContext):
         pass
 
     if user.id == OWNER_ID:
-        text += f"\nThis person is my owner"
+        text += "\nThis person is my owner"
         Nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\nThis Person is a part of Eagle Union"
+        text += "\nThis Person is a part of Eagle Union"
         Nation_level_present = True
     elif user.id in SUDO_USERS:
-        text += f"\nThe Nation level of this person is Royal"
+        text += "\nThe Nation level of this person is Royal"
         Nation_level_present = True
     elif user.id in SUPPORT_USERS:
-        text += f"\nThe Nation level of this person is Sakura"
+        text += "\nThe Nation level of this person is Sakura"
         Nation_level_present = True
     elif user.id in SARDEGNA_USERS:
-        text += f"\nThe Nation level of this person is Sardegna"
+        text += "\nThe Nation level of this person is Sardegna"
         Nation_level_present = True
     elif user.id in WHITELIST_USERS:
-        text += f"\nThe Nation level of this person is Neptunia"
+        text += "\nThe Nation level of this person is Neptunia"
         Nation_level_present = True
 
     if Nation_level_present:
