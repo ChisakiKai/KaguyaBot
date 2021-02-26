@@ -9,7 +9,7 @@
 ![Issues](https://img.shields.io/github/issues/ChisakiKai/TexasRobot?style=for-the-badge&logo=appveyor)
 ![Forks](https://img.shields.io/github/forks/ChisakiKai/TexasRobot?style=for-the-badge&logo=appveyor)
 ![Stars](https://img.shields.io/github/stars/ChisakiKai/TexasRobot?style=for-the-badge&logo=appveyor)
-![LICENSE](https://img.shields.io/github/license/ChisakiKai/TexasaRobot?style=for-the-badge&logo=appveyor)
+![LICENSE](https://img.shields.io/github/license/ChisakiKai/TexasRobot?style=for-the-badge&logo=appveyor)
 ![Contributors](https://img.shields.io/github/contributors/ChisakiKai/TexasRobot?style=for-the-badge&logo=appveyor)
 ![Repository Size](https://img.shields.io/github/repo-size/ChisakiKai/TexasRobot?style=for-the-badge&logo=appveyor)</br>
 
@@ -34,7 +34,7 @@ The Support group can be reached out to at [Zero Union](https://t.me/ZeroBotSupp
 # How to setup
 
 - `git clone https://github.com/ChisakiKai/TexasRobot`
-- `cd KaguyaRobot`
+- `cd TexasRobot`
 - `cp sample_config.ini config.ini`
 - *Fill in all the vars*
 - `pip3 install -U -r requirements.txt`
@@ -47,5 +47,7 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 
 ## Credits
 • [PaulSonOfLars](https://github.com/PaulSonOfLars) All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
+
 • [Dank-del](https://github.com/Dank-del) to make [Kigyō](t.me/kigyorobot) for base and inspiring me make this bot.
+
 • Should any be missing kindly let us know at [Zero Union](https://t.me/ZeroBotSupport) or simply submit a pull request on the readme.
