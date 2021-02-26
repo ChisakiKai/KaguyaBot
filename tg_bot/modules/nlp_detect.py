@@ -8,8 +8,6 @@ from tg_bot.modules.global_bans import SPB_MODE
 import tg_bot.modules.sql.nlp_detect_sql as sql
 from tg_bot.modules.language import gs
 
-from pyrogram.types import Message
-
 session = aiohttp.ClientSession()
 
 
