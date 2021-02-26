@@ -20,7 +20,7 @@
 
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
-Originally a marie fork - Texas has evolved further and was built to be more useful for Anime Chats. 
+Originally a [Kigyō](https://t.me/kigyorobot) fork - Texas has evolved further and was built to be more useful for Anime Chats. 
 
 Can be found on telegram as [Texas](https://t.me/TexasArkrobot).
 
@@ -46,6 +46,17 @@ The Support group can be reached out to at [Zero Union](https://t.me/ZeroBotSupp
 For queries or any issues regarding the bot please open an issue ticket or visit us at [Zero Union](https://t.me/ZeroBotSupport)  
 
 ## Credits
-• [PaulSonOfLars](https://github.com/PaulSonOfLars) All original credits go to Paul and his dedication!
-• [Dank-del](https://github.com/Dank-del) to make [Kigyō](t.me/kigyorobot) for base and inspiring me make this bot.
-• Should any be missing kindly let us know at [Zero Union](https://t.me/ZeroBotSupport) or simply submit a pull request on the readme.
+The bot is based of on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
+This repo was just reamped to suit an Anime-centric community. All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
+
+Thank you for contributors on this Project:
++ [Dank-del](https://github.com/Dank-del)
++ [TsunayoshiSawada](https://github.com/TsunayoshiSawada)
++ [TheRealPhoenix](https://github.com/rsktg)
++ [DragSama](https://github.com/DragSama)
++ [Athphane](https://github.com/athphane)
+
+
+Any other authorship/credits can be seen through the commits
+
+Should any be missing kindly let us know at [Zero Union](https://t.me/ZeroBotSupport) or simply submit a pull request on the readme.
