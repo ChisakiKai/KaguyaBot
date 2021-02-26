@@ -8,14 +8,12 @@ from telegram.utils.helpers import mention_html
 
 from tg_bot import (
     dispatcher,
-    log,
     DEV_USERS,
     SUDO_USERS,
     SARDEGNA_USERS,
     SUPPORT_USERS,
     OWNER_ID,
-    WHITELIST_USERS,
-)
+    WHITELIST_USERS)
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.chat_status import (
     bot_admin,
@@ -24,9 +22,7 @@ from tg_bot.modules.helper_funcs.chat_status import (
     is_user_admin,
     is_user_ban_protected,
     is_user_in_chat,
-    user_admin,
-    user_can_ban,
-)
+    user_admin)
 from tg_bot.modules.helper_funcs.extraction import extract_user_and_text
 from tg_bot.modules.helper_funcs.string_handling import extract_time
 from tg_bot.modules.log_channel import loggable, gloggable

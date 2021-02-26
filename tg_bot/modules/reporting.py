@@ -11,9 +11,7 @@ from telegram.ext import (
     CallbackQueryHandler,
     CommandHandler,
     Filters,
-    MessageHandler,
-    run_async,
-)
+    MessageHandler)
 from telegram.utils.helpers import mention_html
 
 REPORT_GROUP = 12

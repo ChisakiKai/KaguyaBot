@@ -6,12 +6,9 @@ Dank-del
 
 import importlib
 import re
-import json
-import traceback
 from typing import Optional, List
 from sys import argv
-import requests
-from pyrogram import idle, Client
+from pyrogram import idle
 from telegram import Update, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.error import (TelegramError, Unauthorized, BadRequest,
                             TimedOut, ChatMigrated, NetworkError)
@@ -35,10 +32,8 @@ from tg_bot import (
     PORT,
     URL,
     log,
-    ALLOW_EXCL,
     telethn,
-    kp,
-)
+    kp)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!

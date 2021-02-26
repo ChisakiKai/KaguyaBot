@@ -1,5 +1,5 @@
 import html
-import re, os
+import os
 import time
 from typing import List
 

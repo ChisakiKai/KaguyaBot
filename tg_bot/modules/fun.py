@@ -4,10 +4,8 @@ import random
 import time
 import urllib.request
 import urllib.parse
-import requests
 from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext
-from telegram.error import BadRequest
 
 import tg_bot.modules.fun_strings as fun_strings
 from tg_bot import dispatcher

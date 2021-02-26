@@ -3,7 +3,7 @@ import html
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters
-from telegram.utils.helpers import mention_html, mention_markdown
+from telegram.utils.helpers import mention_html
 
 from tg_bot import SUDO_USERS, dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
@@ -18,10 +18,8 @@ from tg_bot.modules.helper_funcs.chat_status import (
 
 from tg_bot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 from tg_bot.modules.log_channel import loggable
-from tg_bot.modules.helper_funcs.alternate import send_message
 from tg_bot import kp, get_entity
-from pyrogram import Client, filters
-from pyrogram.types import Chat, User
+from pyrogram import filters
 from tg_bot.modules.language import gs
 
 
