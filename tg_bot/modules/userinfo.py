@@ -185,12 +185,11 @@ def __user_info__(user_id):
     me = html.escape(sql.get_user_me_info(user_id) or "")
     if bio and me:
         return f"\n<b>About user:</b>\n{me}\n<b>What others say:</b>\n{bio}\n"
-    elif bio:
+    if bio:
         return f"\n<b>What others say:</b>\n{bio}\n"
-    elif me:
+    if me:
         return f"\n<b>About user:</b>\n{me}\n"
-    else:
-        return "\n"
+    return "\n"
 
 
 from tg_bot.modules.language import gs
